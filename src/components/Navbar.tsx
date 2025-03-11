@@ -9,7 +9,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 w-full bg-gray-200 border border-gray-300 text-gray-700">
+        <nav className="fixed top-0 left-0 w-full z-10 bg-stone-200 border-b-2 border-stone-300 text-gray-700">
             <div className="mx-auto px-6 py-4 flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-2 text-xl font-bold">
                     <PiHandPeace />
@@ -18,9 +18,9 @@ export default function Navbar() {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-6 font-semibold">
+                    <NavLink href="/education" label="Education" />
                     <NavLink href="/experience" label="Experience" />
                     <NavLink href="/projects" label="Projects" />
-                    <NavLink href="/contact" label="Contact" />
                 </div>
 
                 {/* Mobile Menu Button */}

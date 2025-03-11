@@ -3,7 +3,8 @@ import { MdEmail } from "react-icons/md";
 
 export default function Footer() {   
     return (
-        <footer className="md:fixed md:bottom-0 w-full bg-gray-200 border border-gray-300 text-gray-700">
+        // TODO: Make footer be at the bottom only if total height is greater than the screen height
+        <footer className="bg-stone-200 border-t-2 border-stone-300 text-gray-700">
             <div className="px-6 py-4 flex items-center justify-between w-full">
                 <p className="text-sm font-semibold">© {new Date().getFullYear()} Mika Sato</p>
                 <div className="flex space-x-4 md:space-x-6">
