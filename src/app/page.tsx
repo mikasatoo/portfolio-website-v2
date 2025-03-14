@@ -11,7 +11,7 @@ export default function Home() {
         <img className="w-full max-w-48 md:max-w-56 rotate-4" src="headshot.png" alt="Me (Mika)"></img>
       </div>
         
-      <div className="flex flex-col gap-4 max-w-220 md:gap-8 text-gray-700">
+      <div className="flex flex-col gap-4 max-w-220 md:gap-8 text-gray-700 text-justify">
         <p>
           I'm a self-taught software developer and former chemical engineer. 
           I graduated with a degree in Chemical and Environmental Engineering from the University of Queensland in mid-2022. 
@@ -20,41 +20,15 @@ export default function Home() {
 
         <div className="flex flex-col gap-2">
           <p className="font-bold">My whys in software engineering:</p>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-inside text-justify">
             <li>I want to make cool things that allow me to be creative.</li>
             <li>I want to do work that has a positive impact - whether it's for 10 users or 10 million, I want to work on technology that helps people and provides a positive user experience (and hopefully even joy).</li>
             <li>I want to keep learning and growing throughout my career - with complex problems and an ever evolving industry, software feels like the best place to do this.</li>
           </ul>
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-6">
           <p className="font-bold">My coding skills:</p>
-
-          {/* Medium screens and above */}
-          <div className="hidden md:block">
-            <div className="flex flex-col gap-8 items-center">
-              <div className="flex flex-row gap-4 items-center min-w-0 flex-shrink basis-0">
-                <CodingIcon name="JavaScript" imgPath="javascript.png" />
-                <CodingIcon name="TypeScript" imgPath="typescript.png" />
-                <CodingIcon name="Java" imgPath="java.png" />
-                <CodingIcon name="Golang" imgPath="go.png" />
-                <CodingIcon name="Python" imgPath="python.png" />
-              </div>
-              <div className="flex flex-row gap-4 items-center min-w-0 flex-shrink basis-0">
-                <CodingIcon name="React" imgPath="react.png" />
-                <CodingIcon name="Next.js" imgPath="nextjs.png" />
-                <CodingIcon name="Node.js" imgPath="node.png" />
-                <CodingIcon name="Express" imgPath="express.png" />
-              </div>
-              <div className="flex flex-row gap-4 items-center min-w-0 flex-shrink basis-0">
-                <CodingIcon name="Kubernetes" imgPath="kubernetes.png" />
-                <CodingIcon name="Jenkins" imgPath="jenkins.png" />
-                <CodingIcon name="Terraform" imgPath="terraform.png" />
-                <CodingIcon name="Ansible" imgPath="ansible.png" />
-                <CodingIcon name="Grafana" imgPath="grafana.png" />
-              </div>
-            </div>
-          </div>
 
           {/* Small screens */}
           <div className="block sm:hidden">
@@ -74,6 +48,32 @@ export default function Home() {
                 <CodingIcon name="Ansible" imgPath="ansible.png" />
                 <CodingIcon name="Grafana" imgPath="grafana.png" />
               </div>
+          </div>
+
+          {/* Medium and larger screens */}
+          <div className="hidden md:block">
+            <div className="flex flex-col gap-8 items-center">
+              <div className="flex flex-row gap-8 items-center min-w-0 flex-shrink basis-0">
+                <CodingIcon name="JavaScript" imgPath="javascript.png" />
+                <CodingIcon name="TypeScript" imgPath="typescript.png" />
+                <CodingIcon name="Java" imgPath="java.png" />
+                <CodingIcon name="Golang" imgPath="go.png" />
+                <CodingIcon name="Python" imgPath="python.png" />
+              </div>
+              <div className="flex flex-row gap-8 items-center min-w-0 flex-shrink basis-0">
+                <CodingIcon name="React" imgPath="react.png" />
+                <CodingIcon name="Next.js" imgPath="nextjs.png" />
+                <CodingIcon name="Node.js" imgPath="node.png" />
+                <CodingIcon name="Express" imgPath="express.png" />
+              </div>
+              <div className="flex flex-row gap-6 items-center min-w-0 flex-shrink basis-0">
+                <CodingIcon name="Kubernetes" imgPath="kubernetes.png" />
+                <CodingIcon name="Jenkins" imgPath="jenkins.png" />
+                <CodingIcon name="Terraform" imgPath="terraform.png" />
+                <CodingIcon name="Ansible" imgPath="ansible.png" />
+                <CodingIcon name="Grafana" imgPath="grafana.png" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
