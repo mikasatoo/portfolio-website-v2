@@ -5,7 +5,7 @@ import { CodingIcon } from "@/components/CodingIcon";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-full p-8 md:p-16 md:pt-12 gap-6 md:gap-10 items-center justify-items-center font-[family-name:var(--font-geist-mono)]">
+    <div className="flex flex-col h-full p-8 md:p-16 md:pt-12 gap-6 md:gap-10 lg:gap-14 items-center justify-items-center font-[family-name:var(--font-geist-mono)]">
       <div className="flex flex-col w-2/3 md:flex-row lg:w-3/4 gap-2 items-center justify-center">
         <h1 className="text-4xl font-bold text-black text-center">Hi there, I'm Mika!</h1>
         <img className="w-full max-w-48 md:max-w-56 rotate-4" src="headshot.png" alt="Me (Mika)"></img>
@@ -78,11 +78,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 xl:mt-4 2xl:mt-6 gap-10 md:gap-20 items-center justify-evenly text-gray-700">
-        <PostItNote path="/education" color="bg-blue-200" rotation="rotate-5" imgPath="graduation-cap.png" imgAlt="Graduation cap" title="Education" description="I'm a real engineer! (Note: I'm not RPEQ but I do got that degree)" />
-        <PostItNote path="/experience" color="bg-yellow-200" rotation="-rotate-4" imgPath="briefcase.png" imgAlt="Briefcase" title="Experience" description="For a timeline of my work experience..." />
-        <PostItNote path="/projects" color="bg-green-200" rotation="-rotate-4" imgPath="wrench.png" imgAlt="Wrench" title="Projects" description="Check out my projects!" />
-        <PostItNote path="/blog" color="bg-pink-200" rotation="rotate-3" imgPath="writing.png" imgAlt="Writing" title="Blog Posts" description="Here's some stuff I've written :)" />
+      <div className="grid grid-cols-[300px] md:grid-cols-[350px_350px] 2xl:grid-cols-[350px_300px_350px_300px] xl:mt-4 2xl:mt-6 gap-10 md:gap-16 lg:gap-20 items-center justify-evenly text-gray-700">
+        <PostItNote path="/education" color="bg-blue-200" rotation="rotate-5" inlineAxis="justify-self-center" imgPath="graduation-cap.png" imgAlt="Graduation cap" title="Education" description="I'm a real engineer! (Note: I'm not RPEQ but I do got that degree)" />
+        <PostItNote path="/experience" color="bg-yellow-200" rotation="-rotate-3" inlineAxis="justify-self-start" imgPath="briefcase.png" imgAlt="Briefcase" title="Experience" description="For a timeline of my work experience..." />
+        <PostItNote path="/projects" color="bg-green-200" rotation="-rotate-6" inlineAxis="justify-self-end" imgPath="wrench.png" imgAlt="Wrench" title="Projects" description="Check out my projects!" />
+        <PostItNote path="/blog" color="bg-pink-200" rotation="rotate-4" inlineAxis="justify-self-start" imgPath="writing.png" imgAlt="Writing" title="Blog Posts" description="Here's some stuff I've written :)" />
       </div>
     </div>
   );
