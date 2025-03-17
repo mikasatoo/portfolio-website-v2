@@ -1,8 +1,12 @@
+import Layout from "@/components/Layout";
+
 export default function Education() {
     return (
-        <main className="p-8">
-            <h1 className="text-3xl font-bold">Education</h1>
-            <p className="mt-4">Here's my creds...</p>
-        </main>
+        <Layout bgColor="bg-blue-200">
+            <div className="p-8">
+                <h1 className="text-3xl font-bold">Education</h1>
+                <p className="mt-4">Here's my creds...</p>
+            </div>
+        </Layout>
     );
 }

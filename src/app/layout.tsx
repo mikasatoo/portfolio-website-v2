@@ -19,18 +19,12 @@ export const metadata: Metadata = {
   description: "A compilation of my experience, projects, and some interests.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
         <Navbar />
-        <main className="pt-16 flex-grow bg-amber-50 text-base">{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
