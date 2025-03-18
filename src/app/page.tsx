@@ -7,13 +7,13 @@ import { CodingIcon } from "@/components/CodingIcon";
 export default function Home() {
   return (
     <Layout bgColor="bg-butteryellow">
-      <div className="flex flex-col h-full p-8 md:p-16 md:pt-12 gap-6 md:gap-10 lg:gap-14 items-center justify-items-center font-[family-name:var(--font-geist-mono)]">
+      <div className="flex flex-col h-full p-8 md:p-16 md:pt-10 gap-6 md:gap-10 lg:gap-14 items-center justify-items-center font-[family-name:var(--font-geist-mono)]">
         <div className="flex flex-col w-2/3 md:flex-row lg:w-3/4 gap-2 items-center justify-center">
           <h1 className="text-4xl font-bold text-black text-center">Hi there, I'm Mika!</h1>
           <img className="w-full max-w-48 md:max-w-56 rotate-4" src="headshot.png" alt="Me (Mika)"></img>
         </div>
           
-        <div className="flex flex-col gap-4 max-w-220 md:gap-8 text-gray-700 text-justify">
+        <div className="flex flex-col gap-4 max-w-220 md:gap-10 text-gray-700 text-center">
           <p>
             I'm a self-taught software developer and former chemical engineer. 
             I graduated with a degree in Chemical and Environmental Engineering from the University of Queensland in mid-2022. 
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-[300px] md:grid-cols-[350px_350px] 2xl:grid-cols-[350px_300px_350px_300px] xl:mt-4 2xl:mt-6 gap-10 md:gap-16 lg:gap-20 items-center justify-evenly text-gray-700">
+        <div className="grid grid-cols-[300px] md:grid-cols-[300px_300px] 2xl:grid-cols-[350px_300px_350px_300px] xl:mt-4 2xl:mt-6 gap-10 md:gap-16 lg:gap-20 items-center justify-evenly text-gray-700">
           <PostItNote path="/education" color="bg-lilac" rotation="rotate-5" inlineAxis="justify-self-center" imgPath="graduation-cap.png" imgAlt="Graduation cap" title="Education" description="I'm a real engineer! (Note: I'm not RPEQ but I do got that degree)" />
           <PostItNote path="/experience" color="bg-yellow" rotation="-rotate-3" inlineAxis="justify-self-start" imgPath="briefcase.png" imgAlt="Briefcase" title="Experience" description="For a timeline of my work experience..." />
           <PostItNote path="/projects" color="bg-pink" rotation="-rotate-6" inlineAxis="justify-self-end" imgPath="wrench.png" imgAlt="Wrench" title="Projects" description="Check out my projects!" />
