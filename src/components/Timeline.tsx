@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export type TimelineItemInputs = {
     title: string;
@@ -12,6 +13,7 @@ export type TimelineItemInputs = {
 export function TimelineItem({ title, company, date, description, isLeft }: TimelineItemInputs) {
     return (
         <div className={`relative flex items-center w-full md:max-w-400 lg:max-w-240 2xl:max-w-280 my-2 ${isLeft ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
+            {/* Timeline marker */}
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +23,8 @@ export function TimelineItem({ title, company, date, description, isLeft }: Time
             >
                 <div className="w-6 h-6 bg-turquoise rounded-full" />
             </motion.div>
-                        
+            
+            {/* Job details */}
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -37,6 +40,14 @@ export function TimelineItem({ title, company, date, description, isLeft }: Time
                         <span key={index}>{line}<br /></span>
                     ))}
                 </p>
+                {/* Link to Projects page (for my Sabbatical role only) */}
+                {company == "Sabbatical" && (
+                    <p className="italic mt-2 text-sm text-gray-700">
+                        Check out some of the projects I built over on my
+                        <Link href="/projects" className="hover:text-blue-500 font-bold"> Projects </Link>
+                        page!
+                    </p>
+                )}
             </motion.div>
         </div>
     );

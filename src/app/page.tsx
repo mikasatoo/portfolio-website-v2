@@ -1,6 +1,4 @@
 import Layout from "@/components/Layout";
-import Link from "next/link";
-import Image from "next/image";
 import { PostItNote } from "@/components/PostItNote";
 import { CodingIcon } from "@/components/CodingIcon";
 
@@ -30,7 +28,7 @@ export default function Home() {
             <p className="font-bold">My whys in software engineering:</p>
             <ul className="list-disc list-inside md:text-justify">
               <li>I want to make cool things that allow me to be creative.</li>
-              <li>I want to do work that has a positive impact - whether it's for 10 users or 10 million, I want to work on technology that helps people and provides a positive user experience (and hopefully even joy).</li>
+              <li>I want to do work that has a positive impact - whether it's for 10 users or 10 million, I want to work on technology that helps people and provides a positive user experience.</li>
               <li>I want to keep learning and growing throughout my career - with complex problems and an ever evolving industry, software feels like the best place to do this.</li>
             </ul>
           </div>
