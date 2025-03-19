@@ -16,7 +16,7 @@ export function TimelineItem({ title, company, date, description, isLeft }: Time
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 className="absolute lg:left-1/2"
             >
                 <div className="w-6 h-6 bg-turquoise rounded-full" />
@@ -26,8 +26,8 @@ export function TimelineItem({ title, company, date, description, isLeft }: Time
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className={`relative w-full max-w-lg lg:max-w-sm 2xl:max-w-md p-4 bg-white shadow-lg rounded-xl ml-8 ${isLeft ? "lg:mr-2 2xl:mr-8 2xl:ml-0" : "2xl:ml-8 2xl:mr-0"}`}
+                transition={{ duration: 1 }}
+                className={`relative w-full max-w-lg lg:max-w-sm 2xl:max-w-md p-4 bg-white shadow-lg rounded-xl ml-8 ${isLeft ? "lg:mr-3 2xl:mr-8 2xl:ml-0" : "2xl:ml-8 2xl:mr-0"}`}
             >
                 <h3 className="text-lg font-bold">{title}</h3>
                 <h4 className="text-md">{company}</h4>
