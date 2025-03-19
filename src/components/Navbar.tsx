@@ -11,7 +11,7 @@ export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 w-full z-10 bg-lilac text-gray-700 font-[family-name:var(--font-geist-mono)]">
             <div className="mx-auto px-6 py-4 flex justify-between items-center">
-                <Link href="/" className="flex items-center gap-2 text-xl font-bold">
+                <Link href="/" className="flex items-center gap-4 text-xl font-bold">
                     <PiHandPeace />
                     Mika Sato
                 </Link>
@@ -21,7 +21,7 @@ export default function Navbar() {
                     <NavLink href="/education" label="Education" />
                     <NavLink href="/experience" label="Experience" />
                     <NavLink href="/projects" label="Projects" />
-                    <NavLink href="/blog" label="Blog" />
+                    {/* <NavLink href="/blog" label="Blog" /> */}
                 </div>
 
                 {/* Mobile Menu Button */}

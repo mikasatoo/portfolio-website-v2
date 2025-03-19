@@ -8,8 +8,9 @@ export default function Home() {
   return (
     // **TODO: Not a priority, but maybe the background could have light lines like it's notepad paper?? And change font of main text to be more handwritten too?
     <Layout bgColor="bg-butteryellow">
-      <div className="flex flex-col h-full p-8 md:p-16 md:pt-8 2xl:pt-10 gap-10 2xl:gap-20 items-center justify-items-center font-[family-name:var(--font-geist-mono)] text-gray-700">
+      <div className="flex flex-col h-full p-8 md:p-16 md:pt-6 2xl:pt-10 gap-10 2xl:gap-20 items-center justify-items-center font-[family-name:var(--font-geist-mono)] text-gray-700">
         {/* Title and bio */}
+        {/* **TODO: Probs keep the title and bio as flex-col even on 2xl screens for a more balanced layout */}
         <div className="flex flex-col 2xl:flex-row gap-10 2xl:w-280 items-center justify-items-center 2xl:justify-center">
           <div className="flex flex-col md:flex-row max-w-220 gap-2 items-center justify-items-center 2xl:justify-self-end">
             <h1 className="max-w-50 md:max-w-60 lg:max-w-120 2xl:max-w-60 text-3xl md:text-4xl font-bold text-black text-center">Hi there, I'm Mika!</h1>
@@ -25,7 +26,7 @@ export default function Home() {
         
         {/* My whys and coding skills */}
         <div className="flex flex-col 2xl:flex-row gap-10 2xl:gap-24 max-w-220 2xl:max-w-280 items-center justify-items-center text-center">
-          <div className="flex flex-col gap-2 max-w-220 2xl:max-w-140">
+          <div className="flex flex-col gap-2 md:gap-4 max-w-220 2xl:max-w-140">
             <p className="font-bold">My whys in software engineering:</p>
             <ul className="list-disc list-inside md:text-justify">
               <li>I want to make cool things that allow me to be creative.</li>
