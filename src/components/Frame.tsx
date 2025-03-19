@@ -33,9 +33,11 @@ export function Frame({ name, imgPath, imgAlt, description, stack, githubLink, d
 
                         {/* Links */}
                         <div className="flex flex-row gap-4 self-end place-self-end items-center pt-2">
-                            <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                                <img className="w-5 shrink-0" src="github.png" alt="GitHub link"></img>
-                            </a>
+                            {githubLink && (
+                                <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                                    <img className="w-5 shrink-0" src="github.png" alt="GitHub link"></img>
+                                </a>
+                            )}
                             {deployedLink && (
                                 <a href={deployedLink} target="_blank" rel="noopener noreferrer">
                                     <img className="w-4 shrink-0" src="external-link.png" alt="External link" />
