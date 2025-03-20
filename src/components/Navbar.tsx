@@ -21,6 +21,7 @@ export default function Navbar() {
                     <NavLink href="/education" label="Education" />
                     <NavLink href="/experience" label="Experience" />
                     <NavLink href="/projects" label="Projects" />
+                    {/* TODO: Add the "Blog" link back in once I set up this page */}
                     {/* <NavLink href="/blog" label="Blog" /> */}
                 </div>
 
