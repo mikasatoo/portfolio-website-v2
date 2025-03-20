@@ -24,7 +24,7 @@ export function Frame({ name, imgPath, imgAlt, description, stack, githubLink, d
                 <div className="flex flex-col gap-2 items-center justify-center text-center">
                     <div className="bg-stone-50 p-2 flex flex-col w-full max-w-[300px] h-[300px] aspect-square items-center justify-between shadow-lg border-double border-16 border-yellow-500 rounded-xl outline outline-8 outline-yellow-400 mb-4">
                         {/* Artwork name */}
-                        <h3 className="text-lg font-bold text-black pb-2 px-2">{name}</h3>
+                        <h3 className="text-lg lg:text-md font-bold text-black pb-2 px-2">{name}</h3>
 
                         {/* Image */}
                         <div className="mx-2 flex items-center justify-center overflow-hidden">
