@@ -5,7 +5,7 @@ import { CodingIcon } from "@/components/CodingIcon";
 export default function Home() {
   return (
     <Layout bgColor="bg-butteryellow">
-      <div className="flex flex-col h-full p-8 md:p-16 md:pt-6 gap-10 2xl:gap-14 items-center justify-items-center font-[family-name:var(--font-geist-mono)] text-gray-700">
+      <div className="flex flex-col h-full p-8 md:p-16 md:pt-6 gap-8 md:gap-10 2xl:gap-14 items-center justify-items-center font-[family-name:var(--font-geist-mono)] text-gray-700">
         {/* Title and bio */}
         <div className="flex flex-col gap-10 2xl:w-280 items-center justify-items-center 2xl:justify-center">
           <div className="flex flex-col md:flex-row max-w-220 gap-2 items-center justify-items-center 2xl:justify-self-end">
