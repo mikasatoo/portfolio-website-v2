@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { PiHandPeace } from "react-icons/pi";
 import { FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,13 +78,7 @@ export default function Navbar() {
                         <div className="flex flex-row gap-4 w-full justify-between items-center">
                             <p>Connect on LinkedIn </p>
                             <Link href="https://linkedin.com/in/mika-sato" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500">
-                                <FaLinkedin className="w-7 lg:w-6 h-7 lg:h-6" />
-                            </Link>
-                        </div>
-                        <div className="flex flex-row gap-4 w-full justify-between items-center">
-                            <p>Send me an email </p>
-                            <Link href="mailto:mika99@live.com.au" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
-                                <MdEmail className="w-7 lg:w-6 h-7 lg:h-6" />
+                                <FaLinkedin className="w-8 lg:w-7 h-8 lg:h-7" />
                             </Link>
                         </div>
 

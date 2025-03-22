@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 
 export default function Footer() {   
     return (
@@ -13,9 +12,6 @@ export default function Footer() {
                     </Link>
                     <Link href="https://linkedin.com/in/mika-sato" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
                         <FaLinkedin className="w-7 lg:w-6 h-7 lg:h-6" />
-                    </Link>
-                    <Link href="mailto:mika99@live.com.au" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
-                        <MdEmail className="w-7 lg:w-6 h-7 lg:h-6" />
                     </Link>
                 </div>
             </div>
