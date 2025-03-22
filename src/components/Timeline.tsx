@@ -55,11 +55,11 @@ export function TimelineItem({ title, company, date, description, isLeft }: Time
 
 export function Timeline({ items }: { items: TimelineItemInputs[] }) {
     return (
-    <div className="relative flex flex-col items-center w-full gap-6 lg:gap-2">
-        <div className="bg-turquoise absolute place-self-start ml-2 lg:left-1/2 w-2 rounded-lg h-full" />
-        {items.map((item, index) => (
-            <TimelineItem key={index} {...item} isLeft={index % 2 != 0} />
-        ))}
-    </div>
-  );
+        <div className="relative flex flex-col items-center w-full gap-6 lg:gap-2">
+            <div className="bg-turquoise absolute place-self-start ml-2 lg:left-1/2 w-2 rounded-lg h-full" />
+            {items.map((item, index) => (
+                <TimelineItem key={index} {...item} isLeft={index % 2 != 0} />
+            ))}
+        </div>
+    );
 };
