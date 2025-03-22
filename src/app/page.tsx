@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
-import { PostItNote } from "@/components/PostItNote";
-import { CodingIcon } from "@/components/CodingIcon";
+import PostItNote from "@/components/PostItNote";
+import CodingIcon from "@/components/CodingIcon";
 
 export default function Home() {
   return (

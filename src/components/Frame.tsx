@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type FrameInputs = {
     name: string;
@@ -11,15 +12,13 @@ type FrameInputs = {
     deployedLink: string;
 }
 
-// border-yellow-600, outline-yellow-500, bg-gradient-to-b from-yellow-400 to-yellow-600
-
 export function Frame({ name, imgPath, imgAlt, description, stack, githubLink, deployedLink }: FrameInputs) {
     return (
         <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
             >
                 <div className="flex flex-col gap-2 items-center justify-center text-center">
                     <div className="bg-stone-50 p-2 flex flex-col w-full max-w-[300px] h-[300px] aspect-square items-center justify-between shadow-lg border-double border-16 border-yellow-500 rounded-xl outline outline-8 outline-yellow-400 mb-4">
@@ -34,14 +33,14 @@ export function Frame({ name, imgPath, imgAlt, description, stack, githubLink, d
                         {/* Links */}
                         <div className="flex flex-row gap-5 md:gap-4 self-end place-self-end items-center pt-2 mr-2">
                             {githubLink && (
-                                <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                                <Link href={githubLink} target="_blank" rel="noopener noreferrer">
                                     <img className="w-7 lg:w-6 shrink-0" src="github.png" alt="GitHub link"></img>
-                                </a>
+                                </Link>
                             )}
                             {deployedLink && (
-                                <a href={deployedLink} target="_blank" rel="noopener noreferrer">
+                                <Link href={deployedLink} target="_blank" rel="noopener noreferrer">
                                     <img className="w-6 lg:w-5 shrink-0" src="external-link.png" alt="External link" />
-                                </a>
+                                </Link>
                             )}
                         </div>
                     </div>

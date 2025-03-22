@@ -10,7 +10,7 @@ type CodingIconInputs = {
   imgPath: string;
 }
 
-export function CodingIcon({ name, imgPath }: CodingIconInputs) {
+export default function CodingIcon({ name, imgPath }: CodingIconInputs) {
     return (
       <div>
         {/* Small and medium screens (include icon name under img) */}
