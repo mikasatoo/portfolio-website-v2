@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Layout from "@/components/Layout";
 import PostItNote from "@/components/PostItNote";
 import CodingIcon from "@/components/CodingIcon";
@@ -37,20 +38,20 @@ export default function Home() {
             {/* Small screens */}
             <div className="block sm:hidden">
                 <div className="flex flex-row gap-6 items-center justify-center flex-wrap mb-4">
-                  <CodingIcon name="JavaScript" imgPath="javascript.png" />
-                  <CodingIcon name="TypeScript" imgPath="typescript.png" />
-                  <CodingIcon name="Java" imgPath="java.png" />
-                  <CodingIcon name="Golang" imgPath="go.png" />
-                  <CodingIcon name="Python" imgPath="python.png" />
-                  <CodingIcon name="React" imgPath="react.png" />
-                  <CodingIcon name="Next.js" imgPath="nextjs.png" />
-                  <CodingIcon name="Node.js" imgPath="node.png" />
-                  <CodingIcon name="Express" imgPath="express.png" />
-                  <CodingIcon name="Kubernetes" imgPath="kubernetes.png" />
-                  <CodingIcon name="Jenkins" imgPath="jenkins.png" />
-                  <CodingIcon name="Terraform" imgPath="terraform.png" />
-                  <CodingIcon name="Ansible" imgPath="ansible.png" />
-                  <CodingIcon name="Grafana" imgPath="grafana.png" />
+                  <CodingIcon name="JavaScript" imgPath="/javascript.png" />
+                  <CodingIcon name="TypeScript" imgPath="/typescript.png" />
+                  <CodingIcon name="Java" imgPath="/java.png" />
+                  <CodingIcon name="Golang" imgPath="/go.png" />
+                  <CodingIcon name="Python" imgPath="/python.png" />
+                  <CodingIcon name="React" imgPath="/react.png" />
+                  <CodingIcon name="Next.js" imgPath="/nextjs.png" />
+                  <CodingIcon name="Node.js" imgPath="/node.png" />
+                  <CodingIcon name="Express" imgPath="/express.png" />
+                  <CodingIcon name="Kubernetes" imgPath="/kubernetes.png" />
+                  <CodingIcon name="Jenkins" imgPath="/jenkins.png" />
+                  <CodingIcon name="Terraform" imgPath="/terraform.png" />
+                  <CodingIcon name="Ansible" imgPath="/ansible.png" />
+                  <CodingIcon name="Grafana" imgPath="/grafana.png" />
                 </div>
             </div>
 
@@ -58,24 +59,24 @@ export default function Home() {
             <div className="hidden md:block">
               <div className="flex flex-col gap-8 items-center">
                 <div className="flex flex-row gap-8 items-center min-w-0 flex-shrink basis-0">
-                  <CodingIcon name="JavaScript" imgPath="javascript.png" />
-                  <CodingIcon name="TypeScript" imgPath="typescript.png" />
-                  <CodingIcon name="Java" imgPath="java.png" />
-                  <CodingIcon name="Golang" imgPath="go.png" />
-                  <CodingIcon name="Python" imgPath="python.png" />
+                  <CodingIcon name="JavaScript" imgPath="/javascript.png" />
+                  <CodingIcon name="TypeScript" imgPath="/typescript.png" />
+                  <CodingIcon name="Java" imgPath="/java.png" />
+                  <CodingIcon name="Golang" imgPath="/go.png" />
+                  <CodingIcon name="Python" imgPath="/python.png" />
                 </div>
                 <div className="flex flex-row gap-8 items-center min-w-0 flex-shrink basis-0">
-                  <CodingIcon name="React" imgPath="react.png" />
-                  <CodingIcon name="Next.js" imgPath="nextjs.png" />
-                  <CodingIcon name="Node.js" imgPath="node.png" />
-                  <CodingIcon name="Express" imgPath="express.png" />
+                  <CodingIcon name="React" imgPath="/react.png" />
+                  <CodingIcon name="Next.js" imgPath="/nextjs.png" />
+                  <CodingIcon name="Node.js" imgPath="/node.png" />
+                  <CodingIcon name="Express" imgPath="/express.png" />
                 </div>
                 <div className="flex flex-row gap-6 items-center min-w-0 flex-shrink basis-0">
-                  <CodingIcon name="Kubernetes" imgPath="kubernetes.png" />
-                  <CodingIcon name="Jenkins" imgPath="jenkins.png" />
-                  <CodingIcon name="Terraform" imgPath="terraform.png" />
-                  <CodingIcon name="Ansible" imgPath="ansible.png" />
-                  <CodingIcon name="Grafana" imgPath="grafana.png" />
+                  <CodingIcon name="Kubernetes" imgPath="/kubernetes.png" />
+                  <CodingIcon name="Jenkins" imgPath="/jenkins.png" />
+                  <CodingIcon name="Terraform" imgPath="/terraform.png" />
+                  <CodingIcon name="Ansible" imgPath="/ansible.png" />
+                  <CodingIcon name="Grafana" imgPath="/grafana.png" />
                 </div>
               </div>
             </div>
@@ -84,17 +85,17 @@ export default function Home() {
 
         {/* Links to other pages */}
         <div className="flex flex-row flex-wrap md:mt-4 gap-10 lg:gap-14 xl:gap-20 items-center justify-evenly">
-          <PostItNote path="/education" color="bg-lilac" rotation="rotate-5" inlineAxis="justify-self-center" imgPath="graduation-cap.png" imgAlt="Graduation cap" title="Education" description="I'm a real engineer and I've got the degree to prove it" />
-          <PostItNote path="/experience" color="bg-yellow" rotation="-rotate-3" inlineAxis="justify-self-start" imgPath="briefcase.png" imgAlt="Briefcase" title="Experience" description="For a timeline of my work experience..." />
-          <PostItNote path="/projects" color="bg-pink" rotation="-rotate-6" inlineAxis="justify-self-end" imgPath="wrench.png" imgAlt="Wrench" title="Projects" description="Check out some projects I've built!" />
+          <PostItNote path="/education" color="bg-lilac" rotation="rotate-5" inlineAxis="justify-self-center" imgPath="/graduation-cap.png" imgAlt="Graduation cap" title="Education" description="I'm a real engineer and I've got the degree to prove it" />
+          <PostItNote path="/experience" color="bg-yellow" rotation="-rotate-3" inlineAxis="justify-self-start" imgPath="/briefcase.png" imgAlt="Briefcase" title="Experience" description="For a timeline of my work experience..." />
+          <PostItNote path="/projects" color="bg-pink" rotation="-rotate-6" inlineAxis="justify-self-end" imgPath="/wrench.png" imgAlt="Wrench" title="Projects" description="Check out some projects I've built!" />
         </div>
         
         {/* TODO: Switch back to this grid layout once I set up the Blog page */}
         {/* <div className="grid grid-cols-[300px] md:grid-cols-[300px_300px] 2xl:grid-cols-[350px_300px_350px_300px] xl:mt-4 2xl:mt-6 gap-10 md:gap-16 lg:gap-20 items-center justify-evenly">
-          <PostItNote path="/education" color="bg-lilac" rotation="rotate-5" inlineAxis="justify-self-center" imgPath="graduation-cap.png" imgAlt="Graduation cap" title="Education" description="I'm a real engineer and I've got the degree to prove it" />
-          <PostItNote path="/experience" color="bg-yellow" rotation="-rotate-3" inlineAxis="justify-self-start" imgPath="briefcase.png" imgAlt="Briefcase" title="Experience" description="For a timeline of my work experience..." />
-          <PostItNote path="/projects" color="bg-pink" rotation="-rotate-6" inlineAxis="justify-self-end" imgPath="wrench.png" imgAlt="Wrench" title="Projects" description="Check out some projects I've built!" />
-          <PostItNote path="/blog" color="bg-turquoise" rotation="rotate-4" inlineAxis="justify-self-start" imgPath="writing.png" imgAlt="Writing" title="Blog Posts" description="Here's some stuff I've written :)" />
+          <PostItNote path="/education" color="bg-lilac" rotation="rotate-5" inlineAxis="justify-self-center" imgPath="/graduation-cap.png" imgAlt="Graduation cap" title="Education" description="I'm a real engineer and I've got the degree to prove it" />
+          <PostItNote path="/experience" color="bg-yellow" rotation="-rotate-3" inlineAxis="justify-self-start" imgPath="/briefcase.png" imgAlt="Briefcase" title="Experience" description="For a timeline of my work experience..." />
+          <PostItNote path="/projects" color="bg-pink" rotation="-rotate-6" inlineAxis="justify-self-end" imgPath="/wrench.png" imgAlt="Wrench" title="Projects" description="Check out some projects I've built!" />
+          <PostItNote path="/blog" color="bg-turquoise" rotation="rotate-4" inlineAxis="justify-self-start" imgPath="/writing.png" imgAlt="Writing" title="Blog Posts" description="Here's some stuff I've written :)" />
         </div> */}
       </div>
     </Layout>

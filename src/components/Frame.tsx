@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 type FrameInputs = {
     name: string;
@@ -27,19 +28,42 @@ export function Frame({ name, imgPath, imgAlt, description, stack, githubLink, d
 
                         {/* Image */}
                         <div className="mx-2 flex items-center justify-center overflow-hidden">
-                            <img className="object-contain" src={imgPath} alt={imgAlt} />
+                            <Image 
+                                src={imgPath}
+                                alt={imgAlt}
+                                width={600} 
+                                height={400} 
+                                layout="intrinsic"
+                                className="object-contain"
+                            />
                         </div>
 
                         {/* Links */}
                         <div className="flex flex-row gap-5 md:gap-4 self-end place-self-end items-center pt-2 mr-2">
                             {githubLink && (
                                 <Link href={githubLink} target="_blank" rel="noopener noreferrer">
-                                    <img className="w-7 lg:w-6 shrink-0" src="github.png" alt="GitHub link"></img>
+                                    <div className="w-7 lg:w-6">
+                                        <Image
+                                            src="/github.png"
+                                            alt="GitHub link"
+                                            width={7}
+                                            height={7}
+                                            layout="responsive"
+                                        />
+                                    </div>
                                 </Link>
                             )}
                             {deployedLink && (
                                 <Link href={deployedLink} target="_blank" rel="noopener noreferrer">
-                                    <img className="w-6 lg:w-5 shrink-0" src="external-link.png" alt="External link" />
+                                    <div className="w-6 lg:w-5">
+                                        <Image
+                                            src="/external-link.png"
+                                            alt="External link"
+                                            width={6}
+                                            height={6}
+                                            layout="responsive"
+                                        />
+                                    </div>                    
                                 </Link>
                             )}
                         </div>
