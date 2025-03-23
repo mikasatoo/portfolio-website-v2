@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Layout from "@/components/Layout";
 import PostItNote from "@/components/PostItNote";
 import CodingIcon from "@/components/CodingIcon";
@@ -10,14 +9,14 @@ export default function Home() {
         {/* Title and bio */}
         <div className="flex flex-col gap-10 2xl:w-280 items-center justify-items-center 2xl:justify-center">
           <div className="flex flex-col md:flex-row max-w-220 gap-2 items-center justify-items-center 2xl:justify-self-end">
-            <h1 className="max-w-50 md:max-w-60 lg:max-w-120 2xl:max-w-60 text-3xl md:text-4xl font-bold text-black text-center">Hi there, I'm Mika!</h1>
+            <h1 className="max-w-50 md:max-w-60 lg:max-w-120 2xl:max-w-60 text-3xl md:text-4xl font-bold text-black text-center">Hi there, I&apos;m Mika!</h1>
             <img className="max-w-48 md:max-w-56 rotate-4" src="headshot.png" alt="Me (Mika)"></img>
           </div>
 
           <p className="max-w-220 2xl:max-w-250 text-center">
-            I'm a self-taught software developer and former chemical engineer. 
+            I&apos;m a self-taught software developer and former chemical engineer. 
             I graduated with a degree in Chemical and Environmental Engineering from the University of Queensland in mid-2022. 
-            A year later, I saw the light and dove into the wide world of software engineering, and I haven't looked back since.
+            A year later, I saw the light and dove into the wide world of software engineering, and I haven&apos;t looked back since.
           </p>
         </div>
         
@@ -27,7 +26,7 @@ export default function Home() {
             <p className="font-bold">My whys in software engineering:</p>
             <ul className="list-disc list-inside md:text-justify">
               <li>I want to make cool things that allow me to be creative.</li>
-              <li>I want to do work that has a positive impact - whether it's for 10 users or 10 million, I want to work on technology that helps people and provides a positive user experience.</li>
+              <li>I want to do work that has a positive impact - whether it&apos;s for 10 users or 10 million, I want to work on technology that helps people and provides a positive user experience.</li>
               <li>I want to keep learning and growing throughout my career - with complex problems and an ever evolving industry, software feels like the best place to do this.</li>
             </ul>
           </div>

@@ -45,7 +45,7 @@ export default function Education() {
                     </div>
                 </motion.div>
 
-                <div className="flex flex-col md:flex-row gap-8 md:gap-10 lg:gap-12 mt-2 md:mt-4 w-full max-w-240 items-start justify-center">
+                <div className="flex flex-col md:flex-row gap-8 md:gap-10 lg:gap-12 mt-2 md:mt-4 w-full max-w-240 2xl:max-w-280 items-start justify-center">
                     {/* Awards */}
                     <div className="flex flex-col gap-4 md:gap-6 items-start w-full md:w-1/2">
                         <div 
