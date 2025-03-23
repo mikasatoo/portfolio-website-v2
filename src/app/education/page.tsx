@@ -58,6 +58,7 @@ export default function Education() {
                                 width={24}
                                 height={24}
                                 className={`transform ${isAwardsOpen ? "" : "-rotate-90"}`}
+                                loading="eager"
                             />
                             <h2 className="text-lg font-bold">Awards & Achievements</h2>
                             <Image
@@ -65,6 +66,7 @@ export default function Education() {
                                 alt="Medal"
                                 width={24}
                                 height={24}
+                                loading="eager"
                             />
                         </div>
 
@@ -92,6 +94,7 @@ export default function Education() {
                                 width={24}
                                 height={24}
                                 className={`transform ${isExtracurrsOpen ? "" : "-rotate-90"}`}
+                                loading="eager"
                             />
                             <h2 className="text-lg font-bold">Extracurriculars</h2>
                             <Image
@@ -99,6 +102,7 @@ export default function Education() {
                                 alt="Student raising hand"
                                 width={24}
                                 height={24}
+                                loading="eager"
                             />
                         </div>
 

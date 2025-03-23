@@ -18,7 +18,7 @@ export default function Home() {
             I graduated with a degree in Chemical and Environmental Engineering from the University of Queensland in mid-2022. 
             A year later, I saw the light and dove into the wide world of software engineering, and I haven&apos;t looked back since.
           </p>
-        </div>
+        </div>  
         
         {/* My whys and coding skills */}
         <div className="flex flex-col 2xl:flex-row gap-10 2xl:gap-26 max-w-220 2xl:max-w-280 items-center justify-items-center text-center">
@@ -85,8 +85,8 @@ export default function Home() {
         {/* Links to other pages */}
         <div className="flex flex-row flex-wrap md:mt-4 gap-10 lg:gap-14 xl:gap-20 items-center justify-evenly">
           <PostItNote path="/education" color="bg-lilac" rotation="rotate-5" inlineAxis="justify-self-center" imgPath="/graduation-cap.png" imgAlt="Graduation cap" title="Education" description="I'm a real engineer and I've got the degree to prove it" />
-          <PostItNote path="/experience" color="bg-yellow" rotation="-rotate-3" inlineAxis="justify-self-start" imgPath="/briefcase.png" imgAlt="Briefcase" title="Experience" description="For a timeline of my work experience..." />
-          <PostItNote path="/projects" color="bg-pink" rotation="-rotate-6" inlineAxis="justify-self-end" imgPath="/wrench.png" imgAlt="Wrench" title="Projects" description="Check out some projects I've built!" />
+          <PostItNote path="/experience" color="bg-yellow" rotation="-rotate-4" inlineAxis="justify-self-start" imgPath="/briefcase.png" imgAlt="Briefcase" title="Experience" description="For a timeline of my work experience..." />
+          <PostItNote path="/projects" color="bg-pink" rotation="rotate-3" inlineAxis="justify-self-end" imgPath="/wrench.png" imgAlt="Wrench" title="Projects" description="Check out some projects I've built!" />
         </div>
         
         {/* TODO: Switch back to this grid layout once I set up the Blog page */}

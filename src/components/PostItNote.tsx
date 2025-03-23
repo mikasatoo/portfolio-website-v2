@@ -23,6 +23,7 @@ export default function PostItNote({ path, color, rotation, imgPath, imgAlt, tit
                         width={200}
                         height={200}
                         className={`w-1/3 shrink-0 ${rotation}`}
+                        loading="eager"
                     />
                     
                     <div className="font-fuzzy-bubbles flex flex-col w-1/2 gap-1">

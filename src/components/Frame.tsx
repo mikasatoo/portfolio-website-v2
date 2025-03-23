@@ -44,6 +44,7 @@ export function Frame({ name, imgPath, imgAlt, description, stack, githubLink, d
                             height={400} 
                             layout="intrinsic"
                             className="object-contain"
+                            loading="eager"
                         />
                     </div>
 

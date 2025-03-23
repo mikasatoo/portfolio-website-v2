@@ -22,6 +22,7 @@ export default function CodingIcon({ name, imgPath }: CodingIconInputs) {
             height={48}
             width={48}
             className="max-h-12 object-contain"
+            loading="eager"
           />
           <p className="text-xs md:text-sm">{name}</p>
         </div>
@@ -35,6 +36,7 @@ export default function CodingIcon({ name, imgPath }: CodingIconInputs) {
               height={56}
               width={56}
               className="max-h-14 mx-auto object-contain"
+              loading="eager"
             />
           </a>
           <Tooltip id="icon-tooltip" />
