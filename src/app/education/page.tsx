@@ -77,7 +77,6 @@ export default function Education() {
                                 <ListEntry name="EAIT Scholar" institution="University of Queensland" year="2019 - 2020" description="Participated in the EAIT (Engineering, Architecture, and Information Technology) Scholars program, as part of the top 5% (by GPA) of the engineering cohort." />
                                 <ListEntry name="Dean's Commendation for Academic Excellence" institution="University of Queensland" year="2018 - 2021" description="Achieved a GPA of over 6.6 in semesters across 2018 to 2021." />
                                 <ListEntry name="Dux of the College" institution="San Sisto College" year="2017" description="" />
-                                <ListEntry name="Queensland Regional Titration Competition: Venue Winner UQ" institution="Royal Australian Chemical Institute" year="2017" description="" />
                             </div>
                         )}
                     </div>

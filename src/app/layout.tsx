@@ -28,8 +28,8 @@ const delius = Delius({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "A compilation of my experience, projects, and some interests.",
+  title: "Mika Sato",
+  description: "A compilation of my skills, experience, and projects.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
