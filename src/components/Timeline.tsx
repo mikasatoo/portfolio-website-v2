@@ -1,4 +1,6 @@
 "use client";
+
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -11,8 +13,14 @@ export type TimelineItemInputs = {
 }
 
 export function TimelineItem({ title, company, date, description, isLeft }: TimelineItemInputs) {
+    const [key, setKey] = useState(0);
+
+    useEffect(() => {
+        setKey((prev) => prev + 1);
+    }, []);
+
     return (
-        <div className={`relative flex items-center w-full md:max-w-400 lg:max-w-240 2xl:max-w-280 my-2 ${isLeft ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
+        <div key={key} className={`relative flex items-center w-full md:max-w-400 lg:max-w-240 2xl:max-w-280 my-2 ${isLeft ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
             {/* Timeline marker */}
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}

@@ -27,7 +27,7 @@ export default function Navbar() {
                     {/* TODO: Add the "Blog" link back in once I set up this page (and in the hamburger menu dropdown below) */}
                     {/* <NavLink href="/blog" label="Blog" /> */}
                     <button 
-                        className="bg-pink rounded-xl p-2 px-3 hover:outline-2 hover:outline-offset-2 hover:outline-pink"
+                        className="bg-pink rounded-xl p-2 px-3 hover:outline-2 hover:outline-offset-2 hover:outline-pink cursor-pointer"
                         onClick={() => setIsContactOpen(true)}
                     >
                         Contact me
@@ -85,7 +85,7 @@ export default function Navbar() {
                         <div className="mt-4 flex w-full justify-end">
                             <button
                                 onClick={() => setIsContactOpen(false)}
-                                className="bg-pink rounded p-2 px-3 text-sm hover:text-gray-400"
+                                className="bg-pink rounded p-2 px-3 text-sm hover:text-gray-400 cursor-pointer"
                             >
                                 Close
                             </button>
