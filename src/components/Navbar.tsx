@@ -69,8 +69,8 @@ export default function Navbar() {
                     className="fixed inset-0 bg-[rgba(0,0,0,0.5)] flex flex-col items-center justify-center"
                     onClick={() => setIsContactOpen(false)}     // (close overlay when clicking outside the modal)
                 >
-                    <div className=
-                        "bg-stone-50 flex flex-col items-start justify-center gap-4 p-7 rounded-lg shadow-lg max-w-sm"
+                    <div 
+                        className="bg-stone-50 flex flex-col items-start justify-center gap-4 p-7 rounded-lg shadow-lg max-w-sm"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <h2 className="text-lg font-semibold mb-2">Want to get in touch?</h2>
