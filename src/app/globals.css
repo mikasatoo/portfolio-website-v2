@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
-
 @import "tailwindcss";
 
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-delius: "Delius", cursive;
-  --font-fuzzy-bubbles: "Fuzzy Bubbles", sans-serif;
+  --font-delius: var(--font-delius);
+  --font-fuzzy-bubbles: var(--font-fuzzy-bubbles);
 
   --color-butteryellow: #FEF9D8;
   --color-yellow: #FCEE8C;
