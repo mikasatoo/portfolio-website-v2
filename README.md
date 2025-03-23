@@ -1,5 +1,5 @@
 ## ✨ me portfolio ✨
 
-Built with Next.js and TypeScript, and deployed with Vercel.
+Built with Next.js, TypeScript, and Tailwind CSS, and deployed with Vercel.
 
-Head to -> <a href="https://www.mikasato.com/">mikasato.com</a>
+Head to -> <a href="https://www.mikasato.com/" target="_blank" rel="noopener noreferrer">mikasato.com</a>
