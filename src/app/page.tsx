@@ -25,7 +25,7 @@ export default function Home() {
           <div className="flex flex-col gap-2 md:gap-4 max-w-220 2xl:max-w-140">
             <p className="font-bold">My whys in software engineering:</p>
             <ul className="list-disc list-inside md:text-justify">
-              <li className="mb-2">I want to make cool things that allow me to be creative.</li>
+              <li className="mb-2">I want to create cool things.</li>
               <li className="mb-2">I want to do work that has a positive impact - whether it&apos;s for 10 users or 10 million, I want to work on technology that helps people and provides a positive user experience.</li>
               <li>I want to keep learning and growing throughout my career - with complex problems and an ever evolving industry, software feels like the best place to do this.</li>
             </ul>
