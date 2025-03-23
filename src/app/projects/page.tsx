@@ -4,7 +4,7 @@ import { Frame } from "@/components/Frame";
 export default function Projects() {
     return (
         <Layout bgColor="bg-butteryellow">
-            <div className="flex flex-col h-full p-8 md:p-16 gap-10 md:gap-16 items-center font-[family-name:var(--font-geist-mono)] text-gray-700">
+            <div className="flex flex-col h-full p-8 md:p-16 gap-10 md:gap-16 items-center text-gray-700">
                 <h1 className="text-3xl text-black font-bold text-center">Project Gallery</h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 xl:mt-2 2xl:mt-6 gap-12 lg:gap-x-20 2xl:max-w-400 items-start justify-items-center">

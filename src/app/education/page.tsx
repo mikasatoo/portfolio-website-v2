@@ -16,7 +16,7 @@ export default function Education() {
 
     return (
         <Layout bgColor="bg-butteryellow">
-            <div className="flex flex-col h-full p-8 md:p-16 gap-8 md:gap-10 lg:gap-12 font-[family-name:var(--font-geist-mono)] text-gray-700 items-start md:items-center">
+            <div className="flex flex-col h-full p-8 md:p-16 gap-8 md:gap-10 lg:gap-12 text-gray-700 items-start md:items-center">
                 <h1 className="text-3xl text-black font-bold lg:text-center">Education</h1>
                 
                 {/* Degree deets */}

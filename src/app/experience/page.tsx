@@ -61,7 +61,7 @@ const timelineItems: TimelineItemInputs[] = [
 export default function Experience() {
     return (
         <Layout bgColor="bg-butteryellow">
-            <div className="flex flex-col h-full p-8 md:p-16 gap-10 2xl:gap-16 font-[family-name:var(--font-geist-mono)] text-gray-700">
+            <div className="flex flex-col h-full p-8 md:p-16 gap-10 2xl:gap-16 text-gray-700">
                 <h1 className="text-3xl text-black font-bold lg:text-center">My Experience</h1>
                 
                 <div className="flex justify-items-center items-center">

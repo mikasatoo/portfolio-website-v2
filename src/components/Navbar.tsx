@@ -11,7 +11,7 @@ export default function Navbar() {
     const [isContactOpen, setIsContactOpen] = useState(false);
     
     return (
-        <nav className="fixed top-0 left-0 w-full z-10 bg-lilac text-gray-700 font-[family-name:var(--font-geist-mono)]">
+        <nav className="fixed top-0 left-0 w-full z-10 bg-lilac text-gray-700">
             {/* Navbar contents */}
             <div className="mx-auto px-6 py-4 flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-4 text-xl font-bold">

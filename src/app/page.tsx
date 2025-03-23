@@ -5,7 +5,7 @@ import CodingIcon from "@/components/CodingIcon";
 export default function Home() {
   return (
     <Layout bgColor="bg-butteryellow">
-      <div className="flex flex-col h-full p-8 md:p-16 md:pt-6 gap-8 md:gap-10 2xl:gap-14 items-center justify-items-center font-[family-name:var(--font-geist-mono)] text-gray-700">
+      <div className="flex flex-col h-full p-8 md:p-16 md:pt-6 gap-8 md:gap-10 2xl:gap-14 items-center justify-items-center text-gray-700">
         {/* Title and bio */}
         <div className="flex flex-col gap-10 2xl:w-280 items-center justify-items-center 2xl:justify-center">
           <div className="flex flex-col md:flex-row max-w-220 gap-2 items-center justify-items-center 2xl:justify-self-end">
@@ -18,7 +18,7 @@ export default function Home() {
             I graduated with a degree in Chemical and Environmental Engineering from the University of Queensland in mid-2022. 
             A year later, I saw the light and dove into the wide world of software engineering, and I haven&apos;t looked back since.
           </p>
-        </div>  
+        </div>
         
         {/* My whys and coding skills */}
         <div className="flex flex-col 2xl:flex-row gap-10 2xl:gap-26 max-w-220 2xl:max-w-280 items-center justify-items-center text-center">

@@ -26,7 +26,7 @@ export default function PostItNote({ path, color, rotation, imgPath, imgAlt, tit
                         loading="eager"
                     />
                     
-                    <div className="font-fuzzy-bubbles flex flex-col w-1/2 gap-1">
+                    <div className="flex flex-col w-1/2 gap-1 font-[family-name:var(--font-fuzzy-bubbles)]">
                         <div className="text-2xl font-bold text-black mb-2">{title}</div>
                         <p className="text-sm text-gray-800">{description}</p>
                     </div>
